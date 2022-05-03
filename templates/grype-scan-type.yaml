@@ -22,7 +22,7 @@ spec:
 
       template:
         spec:
-          automountServiceAccountToken: false
+          automountServiceAccountToken: true
           restartPolicy: Never
           affinity:
             {{- toYaml .Values.scanner.affinity | nindent 12 }}

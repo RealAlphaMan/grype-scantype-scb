@@ -1,4 +1,4 @@
-{
+  {
   "name": "grype-parser",
   "version": "1.0.0",
   "description": "Parser result for  grype",
