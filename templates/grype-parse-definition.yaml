@@ -7,7 +7,7 @@ kind: ParseDefinition
 metadata:
   name: "grype-json"
 spec:
-  image: "{{ .Values.parser.image.repository }}:{{ .Values.parser.image.tag | default .Chart.Version }}"
+  image: "{{ .Values.parser.image.repository }}:{{ .Values.parser.image.tag | default .Chart.AppVersion }}"
   imagePullPolicy: {{ .Values.parser.image.pullPolicy }}
   ttlSecondsAfterFinished: {{ .Values.parser.ttlSecondsAfterFinished }}
   env: 
