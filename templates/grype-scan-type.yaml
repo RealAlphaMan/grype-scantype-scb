@@ -36,6 +36,8 @@ spec:
                 - "/grype"
                 - "-o"
                 - "json"
+                - "--file"
+                - "/home/securecodebox/grype-results.json"
               resources:
                 {{- toYaml .Values.scanner.resources | nindent 16 }}
               securityContext:
